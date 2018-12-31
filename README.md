@@ -73,7 +73,7 @@ docker run -d --name storeadmin-service -p 8081:80 nginx
 
 In this moment you can call the services on browser using the name  
 **app1.domain.local**  
-**storeadmin.comain.local**
+**storeadmin.domain.local**
   
   
 ---
