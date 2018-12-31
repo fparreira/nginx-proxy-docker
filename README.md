@@ -16,7 +16,7 @@ It will be create three container. The first is the nginx reverse proxy. The oth
 
 ## Reverse Proxy
 
-First create the conf file to respond requests.  
+First let's create the conf file to respond requests.  
 
 #### reverse-proxy.conf  
 ```
@@ -42,5 +42,12 @@ server {
   }
 }
 ```
+This is the basic configuration. There are others specifications for each structure.  
+Now, we'll create the nginx dockerfile. The two files must be at the same directory.
 
 #### Dockerfile
+```
+FROM nginx:latest  
+copy reverse-proxy.conf /etc/nginx/conf.d/reverse-proxy.conf
+```
+
